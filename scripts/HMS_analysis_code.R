@@ -1,4 +1,6 @@
-# 3/2024: 
+# Title: HMS Data Analysis Code
+# Authors: Jeff Konrad and Keith Lohse, PhD, Pstat
+# Date: 3/2024 
 # For HMS manuscript
 # Note, there are some calculations and code here for the now defunct Feedback Response Rate variable. 
 
@@ -15,7 +17,8 @@ library(patchwork)
 
 
 # LOAD A LIST OF PARTICIPANTS PLUS OTHER TESTING SCORES
-FILE.1 <- "C:/Users/jdkonrad/Box/LangLab/DCD/Data/EncodingInDevelopmen-ScoreReport1.csv"
+setwd("~/GitHub/pediatric_RL/")
+FILE.1 <- "./data/EncodingInDevelopmen-ScoreReport1.csv"
 RECORD <- read.csv(FILE.1)
 
 RECORD$participant_id <- as.factor(RECORD$participant_id)
